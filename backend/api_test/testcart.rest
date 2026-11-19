@@ -1,0 +1,11 @@
+### Insert Cart
+POST http://localhost:5000/api/product
+Content-Type: application/json
+
+{
+    "productName": "Laptop",
+    "price": 45000
+}
+
+### Display Cart
+GET http://localhost:5000/api/product

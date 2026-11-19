@@ -1,0 +1,54 @@
+
+### 1. Static Login - Success
+POST http://localhost:5000/api/registration/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "admin123"
+}
+
+### 3. Display All Registrations
+GET http://localhost:5000/api/registration
+
+###
+
+### 4. Search Registration by Name or Email
+GET http://localhost:5000/api/registration/search/darshit
+
+###
+
+### 5. Insert Registration Without Image
+POST http://localhost:5000/api/registration
+Content-Type: application/json
+
+{
+    "name": "Rahul Patel",
+    "email": "rahul@example.com",
+    "password": "rahul123",
+    "gender": "Male",
+    "hobbies": "[\"Reading\",\"Sports\"]",
+    "city": "Surat",
+    "dob": "2002-05-15"
+}
+
+###
+
+### 6. Update Registration
+PUT http://localhost:5000/api/registration/6ad4e163061c14be631f0cc3
+Content-Type: application/json
+
+{
+    "name": "Rahul Patel Updated",
+    "email": "rahul.updated@example.com",
+    "password": "rahul123",
+    "gender": "Male",
+    "hobbies": "[\"Music\"]",
+    "city": "Ahmedabad",
+    "dob": "2002-05-15"
+}
+
+###
+
+### 7. Delete Registration
+DELETE http://localhost:5000/api/registration/6ad4e163061c14be631f0cc3

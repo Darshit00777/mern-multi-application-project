@@ -1,0 +1,37 @@
+### insert
+POST http://localhost:5000/api/expense
+Content-Type: application/json
+
+
+{
+    "title": "Grocery",
+    "amount": 1500,
+    "category": "Food",
+    "date": "2026-10-19",
+    "paymentMethod": "UPI",
+    "description": "Monthly grocery shopping"
+}
+
+### all
+GET http://localhost:5000/api/expense
+
+### one record
+GET http://localhost:5000/api/expense/6ad53682f76846daa1dced1f
+
+### Update
+PUT http://localhost:5000/api/expense/6ad53682f76846daa1dced1f
+Content-Type: application/json
+
+
+{
+    "title": "Grocery and Vegetables",
+    "amount": 1800,
+    "category": "Food",
+    "date": "2026-10-19",
+    "paymentMethod": "Cash",
+    "description": "Updated grocery expenses"
+}
+
+
+### Delete
+DELETE http://localhost:5000/api/expense/6ad53682f76846daa1dced1f

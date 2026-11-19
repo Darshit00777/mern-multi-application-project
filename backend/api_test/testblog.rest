@@ -1,0 +1,14 @@
+### Insert Blog
+POST http://localhost:5000/api/blog
+Content-Type: application/json
+
+{
+    "title": "Introduction to React",
+    "description": "React is a JavaScript library for building user interfaces.",
+    "author": "Darshit",
+    "date": "2026-10-19",
+    "category": "Technology"
+}
+
+### Display All Blogs
+GET http://localhost:5000/api/blog
